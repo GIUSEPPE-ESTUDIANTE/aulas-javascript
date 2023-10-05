@@ -20,8 +20,30 @@ console.log(dados[0]);
 console.log(dados[2]);
 
 console.log(`${dados[0]} tem ${dados[2]} anos.`);
-    
 
+
+console.log("---------");
+
+// Objeto
+
+let carro = {
+marca:"fiat",
+modelo: "uno com escada",
+portas: 2,
+cor: "branco",
+opcionais: ["Ar condicionado ", "vidros eletricos","Alarme"]
+
+}
+    
+console.log(carro);
+console.log(carro.modelo);
+
+
+console.log(
+    `carros da ${carro.marca} tem a cor ${carro.cor}`
+)
+
+console.log(`Este carro tem ${carro.opcionais[0]} e ${carro.opcionais[2]}`);
     
      
     

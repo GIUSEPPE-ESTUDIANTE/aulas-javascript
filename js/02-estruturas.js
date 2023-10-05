@@ -7,13 +7,13 @@
  e valores*/
 //  Arrays
 
-let cursos =["node.js", "React", "SQL", "UX/UI Design"]
+let cursos = ["node.js", "React", "SQL", "UX/UI Design"]
 
 console.log(cursos); // saida direita/estrurada
 
 console.log(cursos[2]); // SQL 
 
-const dados = ["Giuseppe","costa","19","(11)94296-2546","Sâo Paulo"]
+const dados = ["Giuseppe", "costa", "19", "(11)94296-2546", "Sâo Paulo"]
 
 console.log(dados[0]);
 
@@ -27,14 +27,14 @@ console.log("---------");
 // Objeto
 
 let carro = {
-marca:"fiat",
-modelo: "uno com escada",
-portas: 2,
-cor: "branco",
-opcionais: ["Ar condicionado ", "vidros eletricos","Alarme"]
+    marca: "fiat",
+    modelo: "uno com escada",
+    portas: 2,
+    cor: "branco",
+    opcionais: ["Ar condicionado ", "vidros eletricos", "Alarme"]
 
 }
-    
+
 console.log(carro);
 console.log(carro.modelo);
 
@@ -44,8 +44,25 @@ console.log(
 )
 
 console.log(`Este carro tem ${carro.opcionais[0]} e ${carro.opcionais[2]}`);
-    
-     
-    
+
+
+
+
+let game = {
+
+    nome: "Rocket League",
+    lançamento: "2015",
+    modo: "Futebol de carro",
+    downlad: "20GB"
+
+}
+
+console.log(game);
+console.log(game.nome);
+
+console.log(`jogo gratis pra abaixar ${game.downlad}`);
+
+
+
 
 

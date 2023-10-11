@@ -34,6 +34,7 @@ de repetiçao sao chamadas de i, j ou k. */
 /* Loop com array */
 let clientes = ["by pamella", "lula","bolsonaro", "lucas", "igor",];
 
+// "Cache/memoria" da quantidade de elementos do array
 let quantidade = clientes.length;
 
 for ( let i = 0; i < quantidade; i++ ){

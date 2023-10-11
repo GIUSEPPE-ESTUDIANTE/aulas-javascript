@@ -10,10 +10,16 @@ Comandos tradicionais:
 obs.: normalmente o loop e controlado
 atraveis de uma variavel contadora.*/
 
-let contador = 1;
+/* let contador = 1;
 while ( contador <= 5 ){
     console.log(`valor de contador: ${contador}`);
-    contador++;
-}
+    contador++;  // ++ incremento
+} */
 
+//  EXEMPLO DO/WHITE (FAÇA/ENQUANTO)
+let contador = 1;
+do {
+    console.log(`contador vale: ${contador} `);
+    contador++;
+} while (contador <= 3)
 

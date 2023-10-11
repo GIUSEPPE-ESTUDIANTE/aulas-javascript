@@ -6,7 +6,7 @@ const limiteDeFaltas = 10;
 
 // Resultados do aluno ficticio
 let aluno = "Jean";
-let mediaFinal = 7.5;
+let mediaFinal = 6.5;
 let faltas = 10;
 let resultado;
 
@@ -29,4 +29,16 @@ if(mediaFinal >= mediaMinima && faltas <= limiteDeFaltas){
 console.log(`O aluno ${aluno} esta ${resultado}`);
 console.log(`Media do aluno: ${mediaFinal}`);
 console.log(`faltas do aluno: ${faltas}`);
+
+console.log("-------------");
+/* Operador logico  */
+let diaDasemana = "domingo";
+
+if(diaDasemana == "sabado" || diaDasemana == "domingo") {
+    console.log("final de semana :)");
+} else {
+    console.log("va trabalhar")
+}
+
+
 

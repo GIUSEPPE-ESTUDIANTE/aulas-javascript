@@ -27,8 +27,17 @@ do {
 de repetiçao sao chamadas de i, j ou k. */
 
 //  EXEMPLO FOR (PARA)
-for( let i = 1; i <= 10; i++ ){
+/* for( let i = 1; i <= 10; i++ ){
     console.log(`i value ${i}`);
+} */
+
+/* Loop com array */
+let clientes = ["by pamella", "lula","bolsonaro", "lucas", "igor",];
+
+let quantidade = clientes.length;
+
+for ( let i = 0; i < quantidade; i++ ){
+    console.log(`cliente: ${clientes[i]}`)
 
 
 }

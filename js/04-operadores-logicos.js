@@ -40,5 +40,14 @@ if(diaDasemana == "sabado" || diaDasemana == "domingo") {
     console.log("va trabalhar")
 }
 
+console.log("--------------");
+
+/* Operador logico ! (NOT - NÂO/NEGAÇÂO) */
+let blackFriday = true;
+if( !blackFriday ){
+    console.log("Preços normais...");
+} else {
+    console.log("preços com desconto...");
+}
 
 

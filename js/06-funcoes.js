@@ -21,12 +21,12 @@ tofixed(2)
 // como escrever funçoes no JS?
 
 // Forma 1: funçao anonima
-const exemplo1 = function(){
+const exemplo1 = function () {
     console.log("Funçao anonima");
 };
 
 // Forma 2: funçao nomeada/declarada 
-function exemplo2(){
+function exemplo2() {
     console.log("Funçao nomeada/declarada");
 }
 
@@ -42,22 +42,26 @@ exemplos3();
 
 /* funçao com parametros e retorno
 de dados/resultados */
-function somar(valor1, valor2){
-   return valor1 + valor2;
+function somar(valor1, valor2) {
+    return valor1 + valor2;
 }
 /* chamamos a funçao diversas vezes 
 e passando valores diferentes como 
 parametros */
-console.log( somar(10, 20));
-console.log( somar(15, 50));
-console.log( somar(30, 47.8));
+console.log(somar(10, 20));
+console.log(somar(15, 50));
+console.log(somar(30, 47.8));
 
 
 /* Formataçao de valores em reais */
-let preco = 1000;
+let preco = 5000;
 let desconto = preco * 0.10; // 10%
 let precoFinal = preco - desconto;
 
-console.log(`Preço: ${preco}`);
-console.log(`Desconto: ${desconto}`);
-console.log(`preço final ${precoFinal}`);
+console.log(`Preço: ${preco.toLocaleString("pt-br", {
+    style: "currency",
+    currency: "BRL"
+})}`
+);
+console.log(`Desconto: ${desconto.toLocaleString()}`);
+console.log(`preço final ${precoFinal.toLocaleString()}`);

@@ -18,8 +18,8 @@ function converteMoeda(valor, cotacao){
 
 // console.log(valorConvertido);// quanto que fica em reais
 
-console.log( formatarmoeda (valorEmDolares));
-console.log( formatarmoeda(valorConvertido));
+console.log( formatarmoeda (valorEmDolares, "en", "USD"));
+console.log( formatarmoeda(valorConvertido ));
 
 function formatarmoeda(valor, local, moeda) {
     let opcoes = {

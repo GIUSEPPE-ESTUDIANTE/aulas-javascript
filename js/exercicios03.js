@@ -1,14 +1,18 @@
-"use strict"
+"use strict";
 
-let preco = 1000;
-let dolar= 5030;
+// Dados de entrada(exemplos de valores)
+let valorDaCotacaoDoDia = 5.03;
+let valorEmDolares = 2500;
 
-function convertevalor(valor){
-    let opcoes={
-        style: "currency",
-        currency: "US"
-    };
 
-    return preco * dolar
+let valorConvertido = converteMoeda(valorDaCotacaoDoDia, valorEmDolares);
 
+// variavel que recebera o resultado processado pela funçâo DEPOIS QUE
+// a funçâo terminar sua execuçâo 
+function converteMoeda(valor, cotacao){
+    return valor * cotacao;
 }
+
+// Saidas apos o processamento
+console.log(valorEmDolares);
+console.log(valorConvertido);

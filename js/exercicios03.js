@@ -21,7 +21,7 @@ function converteMoeda(valor, cotacao){
 console.log( formatarmoeda (valorEmDolares));
 console.log( formatarmoeda(valorConvertido));
 
-function formatarmoeda(valor) {
+function formatarmoeda(valor, local, moeda) {
     let opcoes = {
         style: "currency",
         currency: "BRL"

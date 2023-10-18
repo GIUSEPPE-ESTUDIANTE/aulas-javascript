@@ -39,3 +39,26 @@ console.log(linksReferencia);
 
 let quantidadelinks = linksReferencia.length;
 
+for(let link of linksReferencia) {
+    link.setAttribute("target","_blank");
+    
+    
+}
+
+// for( let i= 0; i <quantidadelinks; i++ )  {
+//     linksReferencia[i].setAttribute("target", "_blank")
+// }
+
+/* Manipulando Eventos */
+const pagina = document.querySelector("body");
+const exemplo01 = document.querySelector("#exemplo01");
+const mensagem = document.querySelector("#mensagem");
+
+
+
+// Ouvinte de evento 
+exemplo01.addEventListener("click", function(){
+    pagina.style.fontFamily = "verdana";
+    mensagem.textContent = "Fonte alterada";
+    mensagem.style.backgroundColor ="yellow";
+});

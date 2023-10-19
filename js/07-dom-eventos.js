@@ -71,3 +71,25 @@ exemplo01.addEventListener("click", function(){
     // Removemos o atribuito hidden
     meme.removeAttribute("hidden");
 });
+
+// Exemplpo modo noturno 
+const botao = document.querySelector("#noturno")
+
+botao.addEventListener("click", gereciarModoNoturno);
+
+function gereciarModoNoturno(){
+    mensagem.textContent = "Ok!";
+    pagina.classList.toggle("modo-noturno");
+
+    if( pagina.classList.contains("modo-noturno") ){
+        botao.textContent = "desativar";
+
+    } else {
+        botao.textContent = "Ativar";
+    };
+}
+
+
+
+
+

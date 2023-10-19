@@ -54,6 +54,9 @@ const pagina = document.querySelector("body");
 const exemplo01 = document.querySelector("#exemplo01");
 const mensagem = document.querySelector("#mensagem");
 
+const audio = document.querySelector("#som");
+const meme = document.querySelector("#meme");
+
 
 
 // Ouvinte de evento 
@@ -61,4 +64,10 @@ exemplo01.addEventListener("click", function(){
     pagina.style.fontFamily = "verdana";
     mensagem.textContent = "Fonte alterada";
     mensagem.style.backgroundColor ="yellow";
+
+    // Executamos o àudio com play
+    som.play()
+
+    // Removemos o atribuito hidden
+    meme.removeAttribute("hidden");
 });
